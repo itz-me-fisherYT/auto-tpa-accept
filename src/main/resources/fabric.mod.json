@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "auto-tpa-accept",
+  "version": "${version}",
+  "name": "Auto TPA Accept",
+  "description": "Client-side helper that automatically accepts TPA-style teleport requests.",
+  "authors": [
+    "Fishers Mods"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.fishersmods.autotpa.AutoTpaAcceptClient"
+    ],
+    "modmenu": [
+      "com.fishersmods.autotpa.AutoTpaModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "auto-tpa-accept.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.4",
+    "minecraft": "~26.1.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
